@@ -17,7 +17,8 @@ export class RemoteConfigBase implements IRemoteConfig.RemoteConfigBase {
     }
 
     public async getRemoteConfigApi(): Promise<IRemoteConfig.RemoteConfigApi> {
-        const value: any = await this.gitApi.getItemText(this.repository, this.path, this.project);
+        const readableStream: NodeJS.ReadableStream = await this.gitApi.getItemContent(this.repository, this.path, this.project);
+        const value: string = readableStream.read().toString();
         const content: IApi.Content = JSON.parse(value);
         return new RemoteConfig.RemoteConfigApi(content);
     }
