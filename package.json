@@ -1,5 +1,5 @@
 {
-  "name": "azure_devops_configremote",
+  "name": "azure-devops-configremote",
   "version": "1.0.0",
   "description": "library to read remote configuration",
   "main": "dist/index.js",
@@ -9,9 +9,13 @@
     "prepublish": "tsc",
     "build": "tsc"
   },
+  "files": [
+    "dist"
+  ],
   "author": "David Polania",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^12.6.8",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^6.1.0",
@@ -23,5 +27,19 @@
   "dependencies": {
     "azure-devops-node-api": "^9.0.1",
     "azure-devops-task-utils": "^1.0.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidpolaniaac/azure_devops_configremote.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidpolaniaac/azure_devops_configremote.git/issues"
+  },
+  "homepage": "https://github.com/davidpolaniaac/azure_devops_configremote.git#readme",
+  "keywords": [
+    "azure",
+    "devops",
+    "tasks",
+    "utlis"
+  ]
 }
