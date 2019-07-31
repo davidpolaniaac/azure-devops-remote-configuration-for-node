@@ -1,6 +1,6 @@
 {
   "name": "azure-devops-remote-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "library to read remote configuration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
