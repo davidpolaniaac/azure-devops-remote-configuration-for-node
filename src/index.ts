@@ -7,8 +7,9 @@ import * as IRemoteConfig from './interfaces/RemoteConfig';
 export async function getRemoteConfigApi(
     repositoryId: string,
     pathConfig: string,
+    commonApi = common,
 ): Promise<IRemoteConfig.RemoteConfigApi> {
-    const webApi: nodeApi.WebApi = await common.getWebApi();
+    const webApi: nodeApi.WebApi = await commonApi.getWebApi();
     const gitApi: GitApi.IGitApi = await webApi.getGitApi();
     const project: string = common.getProject();
     const remoteConfig: RemoteConfig.RemoteConfigBase = new RemoteConfig.RemoteConfigBase(
