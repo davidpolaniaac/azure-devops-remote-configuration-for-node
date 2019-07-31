@@ -1,6 +1,6 @@
 {
   "name": "azure-devops-remote-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "library to read remote configuration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidpolaniaac/azure_devops_configremote.git"
+    "url": "https://github.com/davidpolaniaac/azure_devops_remote_config.git"
   },
   "bugs": {
-    "url": "https://github.com/davidpolaniaac/azure_devops_configremote.git/issues"
+    "url": "https://github.com/davidpolaniaac/azure_devops_remote_config.git/issues"
   },
-  "homepage": "https://github.com/davidpolaniaac/azure_devops_configremote.git#readme",
+  "homepage": "https://github.com/davidpolaniaac/azure_devops_remote_config.git#readme",
   "keywords": [
     "azure",
     "devops",
