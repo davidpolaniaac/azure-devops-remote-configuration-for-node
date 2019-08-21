@@ -1,17 +1,17 @@
 {
   "name": "azure-devops-remote-config",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "library to read remote configuration",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "tsc",
-    "build": "tsc"
+    "dist": "npm run build && cd dist && npm publish",
+    "build:dev": "tsc",
+    "clean": "node_modules/.bin/rimraf ./dist",
+    "build": "npm run clean && npm run build:dev && npm run copypackage",
+    "copypackage": "cp -rf package.json dist"
   },
-  "files": [
-    "dist"
-  ],
   "author": "David Polania",
   "license": "ISC",
   "devDependencies": {
@@ -25,8 +25,7 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "azure-devops-node-api": "^9.0.1",
-    "azure-devops-task-utils": "^1.0.14"
+    "azure-devops-node-api": "^9.0.1"
   },
   "repository": {
     "type": "git",

@@ -19,6 +19,9 @@
   "types": [
     "node"
   ],
+  "files": [
+    "src/index.ts"
+  ],
   "exclude": [
     "node_modules",
     "**/__tests__/*",
