@@ -17,6 +17,14 @@ export class RemoteConfigApi implements IRemoteConfig.RemoteConfigApi {
         }
     }
 
+    public getAllContent(): any {
+        if (this.ObjectConfig) {
+            return this.ObjectConfig;
+        } else {
+            throw new Error(Message.NOT_EXIST);
+        }
+    }
+
     public getStringValue(key: string): string {
         try {
             const value: string = this.getValue(this.ObjectConfig, key) as string;

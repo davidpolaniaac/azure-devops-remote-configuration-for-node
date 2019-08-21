@@ -1,0 +1,150 @@
+{
+   "test":"Valor de prueba",
+   "grupoImplementadores":[
+      {
+         "id":"09DDEB2C6BDD884697A2FC254CD9F22D",
+         "value":"Ambiente No Productivo Dllo Negocios del Activo Sufi Dllo (Para probar en QA)"
+      },
+      {
+         "id":"FEEE69FEE73DC2429AA1383A09298C8F",
+         "value":"OC Disponibilidad Canales y Cajeros Automaticos Infra Canales"
+      },
+      {
+         "id":"B22D7A74DC58D2439B6928B05009BAFC",
+         "value":"OC Disponibilidad Infraestructura Aplicativa Plataforma Integracion IBM"
+      },
+      {
+         "id":"5A79B7BF7F8ED84F8B08CBAE4E6D0547",
+         "value":"OC Disponibilidad Servicios Infraestructura Cloud"
+      },
+      {
+         "id":"604B77226266714F954AC66EB7531DBC",
+         "value":"OC Disponibilidad Plataforma y Colaboracion Servicios de Informacion"
+      },
+      {
+         "id":"E303FDEF5B7E364EA769ABBA6782410F",
+         "value":"OC Disponibilidad Operacion de TI Computo"
+      },
+      {
+         "id":"3E049EB4A9058E49B1D2D6FF67D8E2A3",
+         "value":"OC Infraestructura Plataformas Distribuidas Aplicaciones Windows/Linux"
+      },
+      {
+         "id":"0D68DF1651AAB74DB410A17BFEEF9DA0",
+         "value":"OC Analistas Servicios Clientes Exterior Banistmo"
+      },
+      {
+         "id":"141E9A2A656D5742A9535D6B1B19E58B",
+         "value":"OC Analistas Servicios Clientes Exterior Filiales"
+      },
+      {
+         "id":"938279AADEE288409921A5F00013B99E",
+         "value":"Disponibilidad Infraestructura Aplicativa Murex"
+      },
+      {
+         "id":"EECD184C3DF9DC4C8E4017A106550BA9",
+         "value":"Disponibilidad Infraestructura Aplicativa MDM"
+      },
+      {
+         "id":"1B9BC9EB6D59144DAAA1012B160C081A",
+         "value":"OC Infraestructura de la solucion finacle"
+      },
+      {
+         "id":"B4F21CC2E44D69448143899D82093EDD",
+         "value":"OC Infraestructura Bases de Datos"
+      }
+   ],
+   "dependencias":[
+      "Activos Fijos - Admin Activos Fijos - Gestion Propiedad",
+      "Activos Fijos - GICO - GICO",
+      "Banca Digital - Agilidad del Negocio TI - Agilidad del Negocio TI",
+      "Ciberseguridad - Inte y Reac Ciberseg - Inte y Resp Ciberseg",
+      "Ciberseguridad - Inte y Reac Ciberseg - Monitoreo Ciberseg",
+      "Ciberseguridad - Seguridad Informacion - Seguridad Informacion",
+      "Ciberseguridad - Serv Ciberseg - Controles Ciberseg",
+      "Ciberseguridad - Serv Ciberseg - Gestion Ciberseg",
+      "Disponibilidad - Base de Datos e Infra Aplicativa - Base de Datos",
+      "Disponibilidad - Base de Datos e Infra Aplicativa - Infra Aplicativa",
+      "Disponibilidad - Integrada Op TI - Herramientas Disponibilidad TI",
+      "Disponibilidad - Integrada Op TI - Informacion Procesada TI",
+      "Disponibilidad - Integrada Op TI - Mejora Integral",
+      "Disponibilidad - Integrada Op TI - Monitoreo Servicios TI",
+      "Disponibilidad - Integrada Op TI - Operacion TI",
+      "Disponibilidad - Plataf Centrales - Servicios Infraestructura",
+      "Disponibilidad - Plataf Centrales - Servicios Integrales",
+      "Disponibilidad - Plataf Distr y Colab - Atencion Campo y Req",
+      "Disponibilidad - Plataf Distr y Colab - Canales y Cajeros Auto",
+      "Disponibilidad - Plataf Distr y Colab - Plataforma y Colab",
+      "Disponibilidad - Serv TI Func Corp - Serv TI CORE Filiales Ext",
+      "Disponibilidad - Serv TI Func Corp - Serv TI Func Corp",
+      "Disponibilidad - Serv TI Negocio - Diseño y Conf Monitoreo TI",
+      "Disponibilidad - Serv TI Negocio - Serv TI Canales y Productos",
+      "Disponibilidad - Telecomunicaciones - Conectividad Centros Datos",
+      "Disponibilidad - Telecomunicaciones - Conectividad Sedes y Cajeros",
+      "Disponibilidad - Telecomunicaciones - Telefonia y Video",
+      "Estrategia y Arquitectura - E y Arquitectura - E y Arquitectura",
+      "Gestion Control Financiero - Sist Info Financiera - Sist Info Financiera",
+      "Ingenieria TI - DevOps - DevOps",
+      "Servicios a Finanzas - Serv Apli Financieros - Serv Apli Financieros",
+      "Servicios a Finanzas - Servicios Contables - Endeudamiento",
+      "Servicios Info Digital - Serv Info Digital - Gestion del Documento",
+      "Soporte y Calidad - Servicios Tecnologia Sufi - Sufi",
+      "TS Funciones Corp - Admin y Financiero - Apoyo Admin y Rep Legal",
+      "TS Funciones Corp - Admin y Financiero - Gest Contable y Fin",
+      "TS Funciones Corp - Admin y Financiero - Gest Humana y Nomina",
+      "TS Funciones Corp - Admin y Financiero - Transversales SAP",
+      "TS Funciones Corp - Apoyo al Negocio - Automatizacion Procesos",
+      "TS Funciones Corp - Apoyo al Negocio - Facilitadores Digitales",
+      "TS Funciones Corp - Apoyo al Negocio - Robotica",
+      "TS Funciones Corp - Ecosistemas Riesgos Seg Apoyo TI - Riesgos",
+      "TS Funciones Corp - Ecosistemas Riesgos Seg Apoyo TI - Seguridad",
+      "TS Funciones Corp - Ecosistemas Riesgos Seg Apoyo TI - T. Iseries",
+      "TS Funciones Corp - Ecosistemas Riesgos Seg Apoyo TI - T. No Iseries",
+      "TS Funciones Corp - Filiales Exterior y Aliados - Aliados",
+      "TS Funciones Corp - Filiales Exterior y Aliados - EUCs",
+      "TS Funciones Corp - Filiales Exterior y Aliados - Filiales del Exterior",
+      "TS Funciones Corp - Informacion - Analitica y Bigdata",
+      "TS Funciones Corp - Informacion - Inteligencia de Negocios",
+      "TS Funciones Corp - Informacion - MDM",
+      "TS Funciones Corp - Leasing - Leasing",
+      "TS Funciones Corp - Negocios de Inversion - Gestion Desarrollo",
+      "TS Funciones Corp - Negocios de Inversion - Neg Fidu y Fondos",
+      "TS Funciones Corp - Negocios de Inversion - Tesoreria",
+      "TS Funciones Corp - Negocios de Inversion - Valores",
+      "TS Funciones Corp - Servicios e Integracion - Integracion Distribuida",
+      "TS Funciones Corp - Servicios e Integracion - Legacy y MFT",
+      "TS Funciones Corp - Servicios e Integracion - MQ y Broker",
+      "TS Funciones Corp - Servicios e Integracion - SOA y APIs",
+      "TS Funciones Corp - Sufi - Sufi",
+      "TS Negocio - Canales Digitales - Canales Digitales Empresas",
+      "TS Negocio - Canales Digitales - Canales Digitales Personas",
+      "TS Negocio - Canales Digitales - Canales Directos",
+      "TS Negocio - Canales Digitales - Home",
+      "TS Negocio - Canales Digitales - Transversales e Inclusion",
+      "TS Negocio - Canales Tradicionales - Dispositivos Electronicos",
+      "TS Negocio - Canales Tradicionales - Servicios Electronicos",
+      "TS Negocio - Canales Tradicionales - Servicios Switch y Telefonica",
+      "TS Negocio - Canales Tradicionales - Sucursales",
+      "TS Negocio - Canales y Cont Digitales Pymes - Canales Pymes",
+      "TS Negocio - Canales y Cont Digitales Pymes - Portal Comercio",
+      "TS Negocio - Canales y Cont Digitales Pymes - Portales Cont Pymes",
+      "TS Negocio - Clientes - Asesorar y Negociar",
+      "TS Negocio - Clientes - Clientes Empresas",
+      "TS Negocio - Clientes - Ecosistemas Clientes",
+      "TS Negocio - Clientes - Gestion Cliente y Comercial",
+      "TS Negocio - Clientes - Transversales Clientes",
+      "TS Negocio - Ecosistemas - Ecosistemas",
+      "TS Negocio - Medios de Pago - Aceptacion de Pagos",
+      "TS Negocio - Medios de Pago - Debito y Prepago",
+      "TS Negocio - Medios de Pago - Emisor",
+      "TS Negocio - Medios de Pago - Servicios Transaccionales MP",
+      "TS Negocio - Productos de Captacion - Captaciones",
+      "TS Negocio - Productos de Captacion - Comercio Exterior",
+      "TS Negocio - Productos de Captacion - Pagos y Recaudos",
+      "TS Negocio - Productos de Financiacion - Credito",
+      "TS Negocio - Productos de Financiacion - Factoring",
+      "TS Negocio - Productos de Financiacion - Hipotecario",
+      "TS Negocio - Productos de Financiacion - Jornadas",
+      "VSTI - Journey to the Cloud - Journey to the Cloud"
+   ]
+}

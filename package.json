@@ -1,6 +1,6 @@
 {
   "name": "azure-devops-remote-config",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "library to read remote configuration",
   "main": "index.js",
   "types": "index.d.ts",
@@ -22,7 +22,8 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "prettier": "^1.18.2",
-    "typescript": "^3.5.3"
+    "typescript": "^3.5.3",
+    "azure-devops-task-utils": "^1.0.14"
   },
   "dependencies": {
     "azure-devops-node-api": "^9.0.1"
