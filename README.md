@@ -73,6 +73,9 @@ in the appropriate place refer to the configuration information
         path,
     );
 
+    const value :string = configRemote.getValueConfiguration<string>('Test');
+    console.log(`value : ${value}`)
+
 ```
 
 ## Summary
