@@ -10,6 +10,9 @@ export interface RemoteConfigApi {
     getKeyValue(key: string): IApi.KeyValue;
     get(key: string): any;
     getListValues(key: string): any[];
+    getValueConfiguration<T>(key: string): T;
+    getValueConfigurationFromConfiguration<T>(configuration: any, key: string): T;
+    getConfigurationByType<T>(): T;
 }
 
 export interface RemoteConfigBase {

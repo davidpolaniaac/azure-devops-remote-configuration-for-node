@@ -17,6 +17,31 @@ export class RemoteConfigApi implements IRemoteConfig.RemoteConfigApi {
         }
     }
 
+    public getValueConfiguration<T>(key: string): T {
+        if (typeof this.ObjectConfig[key] !== 'undefined' && this.ObjectConfig[key]) {
+            return this.ObjectConfig[key];
+        } else {
+            throw new Error(Message.NOT_EXIST);
+        }
+    }
+
+    public getValueConfigurationFromConfiguration<T>(configuration: any, key: string): T {
+        if (typeof configuration[key] !== 'undefined' && configuration[key]) {
+            return configuration[key];
+        } else {
+            throw new Error(Message.NOT_EXIST);
+        }
+    }
+
+    public getConfigurationByType<T>(): T {
+        if (this.ObjectConfig) {
+            const configuration: T = (<T>this.ObjectConfig) as T;
+            return configuration;
+        } else {
+            throw new Error(Message.NOT_EXIST);
+        }
+    }
+
     public getAllContent(): any {
         if (this.ObjectConfig) {
             return this.ObjectConfig;

@@ -1,44 +1,46 @@
 {
   "name": "azure-devops-remote-config",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "description": "library to read remote configuration",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "npm run build && cd dist && npm publish",
-    "build:dev": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "compile": "tsc",
     "clean": "node_modules/.bin/rimraf ./dist",
-    "build": "npm run clean && npm run build:dev && npm run copypackage",
-    "copypackage": "cp -rf package.json dist"
+    "build": "npm run clean && npm run compile"
   },
   "author": "David Polania",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^12.6.8",
-    "@typescript-eslint/eslint-plugin": "^1.13.0",
-    "@typescript-eslint/parser": "^1.13.0",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2",
-    "typescript": "^3.5.3"
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
   },
   "dependencies": {
-    "azure-devops-node-api": "^9.0.1"
+    "azure-devops-node-api": "^10.2.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidpolaniaac/azure_devops_remote_config.git"
+    "url": "https://github.com/davidpolaniaac/azure-devops-remote-configuration-for-node.git"
   },
   "bugs": {
-    "url": "https://github.com/davidpolaniaac/azure_devops_remote_config.git/issues"
+    "url": "https://github.com/davidpolaniaac/azure-devops-remote-configuration-for-node.git/issues"
   },
-  "homepage": "https://github.com/davidpolaniaac/azure_devops_remote_config.git#readme",
+  "homepage": "https://github.com/davidpolaniaac/azure-devops-remote-configuration-for-node.git#readme",
   "keywords": [
     "azure",
     "devops",
-    "tasks",
-    "utlis"
+    "remote",
+    "configuration"
   ]
 }

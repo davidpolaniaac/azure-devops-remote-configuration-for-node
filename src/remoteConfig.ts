@@ -20,7 +20,7 @@ export class RemoteConfigBase implements IRemoteConfig.RemoteConfigBase {
     private streamToString(stream: NodeJS.ReadableStream): Promise<string> {
         const chunks: any[] = [];
         return new Promise((resolve, reject) => {
-            stream.on('data', chunk => chunks.push(chunk));
+            stream.on('data', (chunk) => chunks.push(chunk));
             stream.on('error', reject);
             // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
             stream.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));

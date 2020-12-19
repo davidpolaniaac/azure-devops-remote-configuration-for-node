@@ -17,6 +17,6 @@ export async function getRemoteConfigApi(
         gitApi,
     );
 
-    const api = await remoteConfig.getRemoteConfigApi();
+    const api: IRemoteConfig.RemoteConfigApi = await remoteConfig.getRemoteConfigApi();
     return api;
 }
