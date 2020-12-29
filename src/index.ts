@@ -20,3 +20,5 @@ export async function getRemoteConfigApi(
     const api: IRemoteConfig.RemoteConfigApi = await remoteConfig.getRemoteConfigApi();
     return api;
 }
+
+export type RemoteConfigApi = IRemoteConfig.RemoteConfigApi;
