@@ -55,8 +55,6 @@ import * as AzureDevOpsApi from 'azure-devops-node-api';
 
 
 import * as RemoteConfiguration from 'azure-devops-remote-config';
-import * as IRemoteConfig from 'azure-devops-remote-config/interfaces/RemoteConfig';
-
 
 ```
 in the appropriate place refer to the configuration information
@@ -66,7 +64,7 @@ in the appropriate place refer to the configuration information
     const repository: string = 'repository name';
     const path: string = 'config.json';
     const webapi: AzureDevOpsApi.WebApi = await common.getWebApi();
-    const configRemote: IRemoteConfig.RemoteConfigApi = await RemoteConfiguration.getRemoteConfigApi(
+    const configRemote: RemoteConfiguration.RemoteConfigApi = await RemoteConfiguration.getRemoteConfigApi(
         webapi,
         project,
         repository,
