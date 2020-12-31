@@ -1,3 +1,3 @@
 export default {
-    NOT_EXIST: 'value does not exist',
+    NOT_EXIST: 'Remote configuration : value does not exist',
 };
