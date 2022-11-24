@@ -1,13 +1,13 @@
-import * as IApi from './Api';
+import { KeyValue } from './Api';
 
-export interface RemoteConfigApi {
+export interface IRemoteConfigApi {
     getAllContent(): any;
     getStringValue(key: string): string;
     getNumberValue(key: string): number;
     getSimpleStringList(key: string): string[];
     getSimpleNumberList(key: string): number[];
-    getObject(key: string): object;
-    getKeyValue(key: string): IApi.KeyValue;
+    getValue<T>(key: string): T;
+    getKeyValue(key: string): KeyValue;
     get(key: string): any;
     getListValues(key: string): any[];
     getValueConfiguration<T>(key: string): T;
@@ -15,6 +15,6 @@ export interface RemoteConfigApi {
     getConfigurationByType<T>(): T;
 }
 
-export interface RemoteConfigBase {
-    getRemoteConfigApi(): Promise<RemoteConfigApi>;
+export interface IRemoteConfigBase {
+    getRemoteConfigApi(): Promise<IRemoteConfigApi>;
 }

@@ -1,16 +1,17 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-import * as GitApi from 'azure-devops-node-api/GitApi';
-import * as IRemoteConfig from './interfaces/RemoteConfig';
-import * as IApi from './interfaces/Api';
-import * as RemoteConfig from './remoteConfigApi';
+import { IRemoteConfigApi, IRemoteConfigBase } from './interfaces/RemoteConfig';
 
-export class RemoteConfigBase implements IRemoteConfig.RemoteConfigBase {
+import { Content } from './interfaces/Api';
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+import { IGitApi } from 'azure-devops-node-api/GitApi';
+import { RemoteConfigApi } from './remoteConfigApi';
+
+export class RemoteConfigBase implements IRemoteConfigBase {
     private repository: string;
     private path: string;
-    private gitApi: GitApi.IGitApi;
+    private gitApi: IGitApi;
     private project: string;
 
-    public constructor(project: string, repository: string, path: string, gitApi: GitApi.IGitApi) {
+    public constructor(project: string, repository: string, path: string, gitApi: IGitApi) {
         this.project = project;
         this.repository = repository;
         this.path = path;
@@ -27,14 +28,14 @@ export class RemoteConfigBase implements IRemoteConfig.RemoteConfigBase {
         });
     }
 
-    public async getRemoteConfigApi(): Promise<IRemoteConfig.RemoteConfigApi> {
+    public async getRemoteConfigApi(): Promise<IRemoteConfigApi> {
         const readableStream: NodeJS.ReadableStream = await this.gitApi.getItemText(
             this.repository,
             this.path,
             this.project,
         );
         const value: string = await this.streamToString(readableStream);
-        const content: IApi.Content = JSON.parse(value);
-        return new RemoteConfig.RemoteConfigApi(content);
+        const content: Content = JSON.parse(value);
+        return new RemoteConfigApi(content);
     }
 }

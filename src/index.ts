@@ -1,24 +1,18 @@
-import * as nodeApi from 'azure-devops-node-api';
-import * as GitApi from 'azure-devops-node-api/GitApi';
-import * as RemoteConfig from './remoteConfig';
-import * as IRemoteConfig from './interfaces/RemoteConfig';
+import { IRemoteConfigApi, IRemoteConfigBase } from './interfaces/RemoteConfig';
 
+import { IGitApi } from 'azure-devops-node-api/GitApi';
+import { RemoteConfigBase } from './remoteConfig';
+import { WebApi } from 'azure-devops-node-api';
+
+export { IRemoteConfigApi } from './interfaces/RemoteConfig';
 export async function getRemoteConfigApi(
-    webApi: nodeApi.WebApi,
+    webApi: WebApi,
     project: string,
     repositoryId: string,
     pathConfig: string,
-): Promise<IRemoteConfig.RemoteConfigApi> {
-    const gitApi: GitApi.IGitApi = await webApi.getGitApi();
-    const remoteConfig: RemoteConfig.RemoteConfigBase = new RemoteConfig.RemoteConfigBase(
-        project,
-        repositoryId,
-        pathConfig,
-        gitApi,
-    );
-
-    const api: IRemoteConfig.RemoteConfigApi = await remoteConfig.getRemoteConfigApi();
+): Promise<IRemoteConfigApi> {
+    const gitApi: IGitApi = await webApi.getGitApi();
+    const remoteConfig: IRemoteConfigBase = new RemoteConfigBase(project, repositoryId, pathConfig, gitApi);
+    const api: IRemoteConfigApi = await remoteConfig.getRemoteConfigApi();
     return api;
 }
-
-export type RemoteConfigApi = IRemoteConfig.RemoteConfigApi;

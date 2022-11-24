@@ -63,7 +63,7 @@ in the appropriate place refer to the configuration information
     const project: string = 'project id';
     const repository: string = 'repository name';
     const path: string = 'config.json';
-    const webapi: AzureDevOpsApi.WebApi = await common.getWebApi();
+    const webapi: AzureDevOpsApi.WebApi = common.getWebApi();
     const configRemote: RemoteConfiguration.RemoteConfigApi = await RemoteConfiguration.getRemoteConfigApi(
         webapi,
         project,

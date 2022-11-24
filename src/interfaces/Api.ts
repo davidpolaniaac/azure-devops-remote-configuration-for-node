@@ -1,6 +1,6 @@
 export interface KeyValue {
     key: string;
-    value: object;
+    value: any;
 }
 
 export interface Content {
