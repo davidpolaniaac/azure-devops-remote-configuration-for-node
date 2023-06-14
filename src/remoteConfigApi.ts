@@ -29,7 +29,7 @@ export class RemoteConfigApi implements IRemoteConfigApi {
         if (typeof configuration[key] !== 'undefined' && configuration[key]) {
             return configuration[key];
         } else {
-            throw new Error(`${Message.CONFIG_NOT_EXIST} for the key =  ${key}`);
+            throw new Error(`${Message.CONFIG_NOT_EXIST} for the key = ${key}`);
         }
     }
 

@@ -2,13 +2,14 @@
   "compilerOptions": {
     "target": "es6",
     "declaration": true,
+    "rootDir": "src",
     "lib": [
       "es2017",
       "es7",
       "es6",
       "dom"
     ],
-    "outDir": "dist",
+    "outDir": "lib",
     "module": "commonjs",
     "strict": true,
   },
@@ -16,7 +17,8 @@
     "src"
   ],
   "types": [
-    "node"
+    "node",
+    "jest"
   ],
   "files": [
     "src/index.ts"
@@ -24,6 +26,6 @@
   "exclude": [
     "node_modules",
     "**/__tests__/*",
-    "dist"
+    "lib"
   ],
 }
