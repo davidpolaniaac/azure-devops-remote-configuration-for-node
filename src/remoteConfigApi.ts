@@ -10,7 +10,7 @@ export class RemoteConfigApi implements IRemoteConfigApi {
     }
 
     private getData(value: any, key: string): any {
-        if (typeof value[key] !== 'undefined' && value[key]) {
+        if (typeof value[key] !== 'undefined') {
             return value[key];
         } else {
             throw new Error(`${Message.VALUE_NOT_EXIST} for the key = ${key}`);
@@ -18,7 +18,7 @@ export class RemoteConfigApi implements IRemoteConfigApi {
     }
 
     public getValueConfiguration<T>(key: string): T {
-        if (typeof this.ObjectConfig[key] !== 'undefined' && this.ObjectConfig[key]) {
+        if (typeof this.ObjectConfig[key] !== 'undefined') {
             return this.ObjectConfig[key];
         } else {
             throw new Error(`${Message.CONFIG_NOT_EXIST} for the key = ${key}`);
@@ -26,7 +26,7 @@ export class RemoteConfigApi implements IRemoteConfigApi {
     }
 
     public getValueConfigurationFromConfiguration<T>(configuration: any, key: string): T {
-        if (typeof configuration[key] !== 'undefined' && configuration[key]) {
+        if (typeof configuration[key] !== 'undefined') {
             return configuration[key];
         } else {
             throw new Error(`${Message.CONFIG_NOT_EXIST} for the key = ${key}`);
